@@ -1,0 +1,884 @@
+2018-08-16 10:03:11.450  INFO 12840 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 10:03:13.711  INFO 12840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 10:03:13.712  INFO 12840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 10:03:13.715  INFO 12840 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 10:03:13.922  INFO 12840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 10:03:14.052  WARN 12840 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 10:03:14.052  INFO 12840 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 10:03:14.791  INFO 12840 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@63b04b14
+2018-08-16 10:03:15.854  INFO 12840 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 10:03:15.952  INFO 12840 --- [cluster-ClusterId{value='5b74fe8bc8417732289a55a6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2018-08-16 10:03:15.954  INFO 12840 --- [cluster-ClusterId{value='5b74fe8bc8417732289a55a6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=740934}
+2018-08-16 10:03:18.132  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 10:03:18.135  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 10:03:18.135  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 10:03:18.136  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 10:03:18.136  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 10:03:18.136  INFO 12840 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 10:03:29.018  INFO 12840 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 10:03:29.926  INFO 12840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 10:03:30.094  INFO 12840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 10:03:30.113  INFO 12840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 10:03:30.320  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.329  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.377  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.378  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.406  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.407  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.416  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.417  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.428  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.428  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.431  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.432  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.Note>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.Note>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.434  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.439  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.440  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.450  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.450  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.LabelDTO>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.LabelDTO>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.450  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.454  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.470  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.lang.String>) -> ModelContext{type=java.util.Map<java.lang.String,java.lang.String>, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 10:03:30.473  INFO 12840 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 10:03:30.478  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.478  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>) -> ModelContext{type=java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.479  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>) -> ModelContext{type=java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.479  WARN 12840 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 10:03:30.696  WARN 12840 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 10:03:30.696  INFO 12840 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 10:03:31.845  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 10:03:31.909  INFO 12840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 10:03:31.909  INFO 12840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 10:03:32.029  INFO 12840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 10:03:32.029  INFO 12840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 10:03:32.183  INFO 12840 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:03:32.196  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 10:03:32.196  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 10:03:32.196  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 10:03:32.196  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 10:03:32.196  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 10:03:32.197  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 10:03:32.197  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 10:03:32.348  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 10:03:32.357  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 10:03:32.360  INFO 12840 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 10:03:32.367  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534394012365 with initial instances count: 2
+2018-08-16 10:03:32.374  INFO 12840 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534394012374, current=UP, previous=STARTING]
+2018-08-16 10:03:32.376  INFO 12840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 10:03:32.444  INFO 12840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 10:03:32.451  INFO 12840 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 23.548 seconds (JVM running for 24.024)
+2018-08-16 10:08:32.198  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:13:32.200  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:18:32.201  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:23:32.222  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:28:32.223  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:33:32.224  INFO 12840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 10:35:16.590  WARN 12840 --- [RMI TCP Connection(46)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534395916590, current=DOWN, previous=UP]
+2018-08-16 10:35:16.590  INFO 12840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 10:35:16.596  INFO 12840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 10:35:17.614  INFO 12840 --- [RMI TCP Connection(46)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 10:35:17.669  INFO 12840 --- [RMI TCP Connection(46)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 11:09:45.926  INFO 17265 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 11:09:47.573  INFO 17265 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 11:09:47.573  INFO 17265 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 11:09:47.577  INFO 17265 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 11:09:47.644  INFO 17265 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 11:09:47.761  WARN 17265 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 11:09:47.761  INFO 17265 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 11:09:47.768  INFO 17265 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@18770736
+2018-08-16 11:09:48.170  INFO 17265 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 11:09:48.208  INFO 17265 --- [cluster-ClusterId{value='5b750e24c841774371641769', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:27017
+2018-08-16 11:09:48.210  INFO 17265 --- [cluster-ClusterId{value='5b750e24c841774371641769', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=739468}
+2018-08-16 11:09:48.646  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 11:09:48.646  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 11:09:48.647  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 11:09:48.647  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 11:09:48.647  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 11:09:48.647  INFO 17265 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 11:09:53.020  INFO 17265 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 11:09:53.446  INFO 17265 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 11:09:53.477  INFO 17265 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 11:09:53.492  INFO 17265 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 11:09:53.615  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.620  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.647  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.648  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.668  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.669  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.677  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.678  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.687  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.687  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.690  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.691  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.Note>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.Note>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.691  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.696  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.697  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.705  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.705  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.LabelDTO>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.LabelDTO>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.705  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.708  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.721  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.lang.String>) -> ModelContext{type=java.util.Map<java.lang.String,java.lang.String>, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 11:09:53.723  INFO 17265 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 11:09:53.727  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.727  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>) -> ModelContext{type=java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.728  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>) -> ModelContext{type=java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:53.728  WARN 17265 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 11:09:54.069  WARN 17265 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 11:09:54.070  INFO 17265 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 11:09:54.967  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 11:09:55.012  INFO 17265 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 11:09:55.013  INFO 17265 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 11:09:55.088  INFO 17265 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 11:09:55.088  INFO 17265 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 11:09:55.209  INFO 17265 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 11:09:55.219  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 11:09:55.333  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 11:09:55.335  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 11:09:55.337  INFO 17265 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 11:09:55.339  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534397995338 with initial instances count: 1
+2018-08-16 11:09:55.343  INFO 17265 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534397995343, current=UP, previous=STARTING]
+2018-08-16 11:09:55.344  INFO 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 11:09:55.369  INFO 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 11:09:55.377  INFO 17265 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 12.071 seconds (JVM running for 12.458)
+2018-08-16 11:14:55.221  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:19:55.223  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:24:55.224  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:29:55.225  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:34:55.227  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:39:55.228  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:44:55.229  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:49:55.230  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:54:55.231  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 11:59:55.233  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:04:30.677  INFO 17265 --- [http-nio-8092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 12:04:55.234  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:09:55.235  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:14:55.248  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:19:55.263  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:24:55.264  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:29:55.265  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:34:55.285  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:39:55.286  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:44:55.287  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:49:55.301  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:54:55.302  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 12:59:55.304  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:04:55.305  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:09:55.306  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:14:55.307  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:19:55.308  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:24:55.309  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:29:55.310  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:34:55.312  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:39:55.313  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:44:55.314  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:49:55.315  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:54:55.316  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 13:59:55.317  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:04:55.318  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:09:55.320  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:14:55.321  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:19:55.322  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:24:55.323  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:29:55.324  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:34:55.325  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:39:55.326  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:44:55.327  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:49:55.352  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:54:55.386  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 14:59:55.428  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 15:04:55.428  INFO 17265 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 15:07:27.724 ERROR 17265 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 26 common frames omitted
+
+2018-08-16 15:07:27.737  WARN 17265 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-08-16 15:07:27.740 ERROR 17265 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2018-08-16 15:07:27.741  WARN 17265 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-08-16 15:07:27.759 ERROR 17265 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2018-08-16 15:07:27.774 ERROR 17265 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 common frames omitted
+
+2018-08-16 15:07:27.775  WARN 17265 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-08-16 15:07:27.777 ERROR 17265 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2018-08-16 15:07:27.777  WARN 17265 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-08-16 15:07:27.778 ERROR 17265 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2018-08-16 15:07:27.954  WARN 17265 --- [RMI TCP Connection(247)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534412247954, current=DOWN, previous=UP]
+2018-08-16 15:07:27.955  INFO 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 15:07:27.958 ERROR 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2018-08-16 15:07:27.959  WARN 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2018-08-16 15:07:27.960  WARN 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2018-08-16 15:07:27.961  WARN 17265 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2018-08-16 15:07:29.014  INFO 17265 --- [RMI TCP Connection(247)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 15:07:29.077  INFO 17265 --- [RMI TCP Connection(247)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 15:07:29.084  INFO 17265 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:40:51.217  INFO 3912 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 16:40:53.347  INFO 3912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 16:40:53.348  INFO 3912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 16:40:53.351  INFO 3912 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 16:40:53.419  INFO 3912 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 16:40:53.540  WARN 3912 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:40:53.541  INFO 3912 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:40:53.547  INFO 3912 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@255abcdf
+2018-08-16 16:40:53.904  INFO 3912 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 16:40:53.949  INFO 3912 --- [cluster-ClusterId{value='5b755bbdc841770f4861a34c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2018-08-16 16:40:53.951  INFO 3912 --- [cluster-ClusterId{value='5b755bbdc841770f4861a34c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=819362}
+2018-08-16 16:40:54.517  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 16:40:54.544  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 16:40:54.545  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 16:40:54.545  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 16:40:54.545  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 16:40:54.546  INFO 3912 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 16:41:00.006  INFO 3912 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 16:41:00.555  INFO 3912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 16:41:00.597  INFO 3912 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 16:41:00.614  INFO 3912 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 16:41:00.737  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.743  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.769  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.769  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.790  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.790  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.797  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.798  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.807  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.807  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.811  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.811  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.Note>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.Note>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.812  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.819  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.820  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.830  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.830  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.LabelDTO>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.LabelDTO>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.831  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.834  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.849  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.lang.String>) -> ModelContext{type=java.util.Map<java.lang.String,java.lang.String>, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:41:00.851  INFO 3912 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 16:41:00.854  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.855  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>) -> ModelContext{type=java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.855  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>) -> ModelContext{type=java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:00.856  WARN 3912 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:41:01.694  WARN 3912 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:41:01.694  INFO 3912 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:41:05.463  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 16:41:05.967  INFO 3912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 16:41:05.967  INFO 3912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 16:41:06.334  INFO 3912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 16:41:06.334  INFO 3912 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 16:41:06.683  INFO 3912 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 16:41:06.696  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 16:41:07.038  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 16:41:07.065  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 16:41:07.067  INFO 3912 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 16:41:07.073  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534417867068 with initial instances count: 1
+2018-08-16 16:41:07.077  INFO 3912 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534417867077, current=UP, previous=STARTING]
+2018-08-16 16:41:07.078  INFO 3912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 16:41:07.353  INFO 3912 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 18.769 seconds (JVM running for 19.26)
+2018-08-16 16:41:07.373  INFO 3912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 16:41:33.693  INFO 3912 --- [http-nio-8092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:43:44.273  WARN 3912 --- [RMI TCP Connection(14)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534418024273, current=DOWN, previous=UP]
+2018-08-16 16:43:44.302  INFO 3912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 16:43:44.309  INFO 3912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 16:43:45.433  INFO 3912 --- [RMI TCP Connection(14)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 16:43:45.527  INFO 3912 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 16:43:45.609  INFO 3912 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:43:58.738  INFO 4183 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 16:44:01.049  INFO 4183 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 16:44:01.049  INFO 4183 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 16:44:01.054  INFO 4183 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 16:44:01.213  INFO 4183 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 16:44:01.380  WARN 4183 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:44:01.380  INFO 4183 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:44:01.408  INFO 4183 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7d01b49d
+2018-08-16 16:44:02.634  INFO 4183 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 16:44:02.945  INFO 4183 --- [cluster-ClusterId{value='5b755c7ac84177105785e080', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2018-08-16 16:44:02.949  INFO 4183 --- [cluster-ClusterId{value='5b755c7ac84177105785e080', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1861394}
+2018-08-16 16:44:03.712  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 16:44:03.713  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 16:44:03.713  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 16:44:03.713  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 16:44:03.713  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 16:44:03.713  INFO 4183 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 16:44:08.867  INFO 4183 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 16:44:09.570  INFO 4183 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 16:44:09.608  INFO 4183 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 16:44:09.623  INFO 4183 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 16:44:09.758  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.763  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.792  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.793  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.812  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.813  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.821  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.822  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.822  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.822  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.834  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.834  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.837  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.837  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.Note>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.Note>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.838  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.843  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.844  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.852  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.853  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.LabelDTO>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.LabelDTO>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.853  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.856  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.868  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.lang.String>) -> ModelContext{type=java.util.Map<java.lang.String,java.lang.String>, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:44:09.871  INFO 4183 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 16:44:09.874  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.875  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>) -> ModelContext{type=java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.875  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>) -> ModelContext{type=java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:09.875  WARN 4183 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:44:10.034  WARN 4183 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:44:10.034  INFO 4183 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:44:11.291  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 16:44:11.380  INFO 4183 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 16:44:11.380  INFO 4183 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 16:44:11.569  INFO 4183 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 16:44:11.569  INFO 4183 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 16:44:11.795  INFO 4183 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 16:44:11.804  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 16:44:11.805  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 16:44:11.977  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 16:44:11.979  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 16:44:11.981  INFO 4183 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 16:44:11.984  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534418051983 with initial instances count: 2
+2018-08-16 16:44:11.987  INFO 4183 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534418051987, current=UP, previous=STARTING]
+2018-08-16 16:44:11.988  INFO 4183 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 16:44:12.018  INFO 4183 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 16:44:12.047  INFO 4183 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 17.401 seconds (JVM running for 20.507)
+2018-08-16 16:44:14.690  INFO 4183 --- [http-nio-8092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:45:07.050  WARN 4183 --- [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534418107050, current=DOWN, previous=UP]
+2018-08-16 16:45:07.050  INFO 4183 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 16:45:07.055  INFO 4183 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 16:45:08.074  INFO 4183 --- [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 16:45:08.129  INFO 4183 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 16:45:08.137  INFO 4183 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:47:30.345  INFO 4586 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 16:47:32.046  INFO 4586 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 16:47:32.046  INFO 4586 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 16:47:32.055  INFO 4586 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 16:47:32.126  INFO 4586 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 16:47:32.254  WARN 4586 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:47:32.255  INFO 4586 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:47:32.261  INFO 4586 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4f81b80e
+2018-08-16 16:47:32.940  INFO 4586 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 16:47:33.046  INFO 4586 --- [cluster-ClusterId{value='5b755d4cc8417711ea3bb3f4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:16}] to localhost:27017
+2018-08-16 16:47:33.047  INFO 4586 --- [cluster-ClusterId{value='5b755d4cc8417711ea3bb3f4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=740794}
+2018-08-16 16:47:33.334  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 16:47:33.335  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 16:47:33.336  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 16:47:33.336  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 16:47:33.336  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 16:47:33.336  INFO 4586 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 16:47:37.072  INFO 4586 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 16:47:37.998  INFO 4586 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 16:47:38.102  INFO 4586 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 16:47:38.126  INFO 4586 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 16:47:38.263  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.268  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.web.servlet.ModelAndView) -> ModelContext{type=org.springframework.web.servlet.ModelAndView, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.298  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.298  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.ResponseDTO) -> ModelContext{type=com.bridgeit.noteservice.model.ResponseDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.319  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.320  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.RemindMe) -> ModelContext{type=com.bridgeit.noteservice.model.RemindMe, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.328  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.329  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.329  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.329  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.NoteDTO) -> ModelContext{type=com.bridgeit.noteservice.model.NoteDTO, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.340  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.341  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.343  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.344  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.Note>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.Note>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.344  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.350  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.350  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.359  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.359  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.List<com.bridgeit.noteservice.model.LabelDTO>) -> ModelContext{type=java.util.List<com.bridgeit.noteservice.model.LabelDTO>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.359  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.LabelDTO) -> ModelContext{type=com.bridgeit.noteservice.model.LabelDTO, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.361  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(com.bridgeit.noteservice.model.Note) -> ModelContext{type=com.bridgeit.noteservice.model.Note, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.376  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.lang.String>) -> ModelContext{type=java.util.Map<java.lang.String,java.lang.String>, isReturnType=false}. java.lang.NullPointerException
+2018-08-16 16:47:38.378  INFO 4586 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 16:47:38.382  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.382  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>) -> ModelContext{type=java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.382  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>) -> ModelContext{type=java.util.Map<java.lang.String,java.util.Map<java.lang.String,org.springframework.boot.actuate.endpoint.web.Link>>, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.382  WARN 4586 --- [main] s.d.s.p.CachingModelPropertiesProvider   : Exception calculating properties for model(org.springframework.boot.actuate.endpoint.web.Link) -> ModelContext{type=org.springframework.boot.actuate.endpoint.web.Link, isReturnType=true}. java.lang.NullPointerException
+2018-08-16 16:47:38.543  WARN 4586 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 16:47:38.543  INFO 4586 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 16:47:40.650  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 16:47:40.949  INFO 4586 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 16:47:40.949  INFO 4586 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 16:47:41.308  INFO 4586 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 16:47:41.308  INFO 4586 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 16:47:41.874  INFO 4586 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 16:47:41.885  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 16:47:41.886  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 16:47:42.192  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 16:47:42.222  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 16:47:42.227  INFO 4586 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 16:47:42.233  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534418262231 with initial instances count: 2
+2018-08-16 16:47:42.242  INFO 4586 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534418262242, current=UP, previous=STARTING]
+2018-08-16 16:47:42.245  INFO 4586 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 16:47:42.287  INFO 4586 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 16:47:42.382  INFO 4586 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 14.864 seconds (JVM running for 15.271)
+2018-08-16 16:47:49.385  INFO 4586 --- [http-nio-8092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 16:52:41.888  INFO 4586 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 16:57:41.917  INFO 4586 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:00:51.304  WARN 4586 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534419051304, current=DOWN, previous=UP]
+2018-08-16 17:00:51.305  INFO 4586 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 17:00:51.314  INFO 4586 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 17:00:52.448  INFO 4586 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 17:00:52.766  INFO 4586 --- [RMI TCP Connection(24)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 17:00:52.795  INFO 4586 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 17:01:06.210  INFO 5434 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 17:01:09.629  INFO 5434 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 17:01:09.630  INFO 5434 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 17:01:09.683  INFO 5434 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 17:01:09.846  INFO 5434 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 17:01:10.024  WARN 5434 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 17:01:10.024  INFO 5434 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 17:01:10.063  INFO 5434 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@70a6c170
+2018-08-16 17:01:11.115  INFO 5434 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 17:01:11.754  INFO 5434 --- [cluster-ClusterId{value='5b75607fc84177153ad1ab20', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2018-08-16 17:01:11.756  INFO 5434 --- [cluster-ClusterId{value='5b75607fc84177153ad1ab20', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1030230}
+2018-08-16 17:01:12.456  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 17:01:12.458  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 17:01:12.459  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 17:01:12.459  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 17:01:12.459  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 17:01:12.460  INFO 5434 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 17:01:17.790  INFO 5434 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 17:01:18.290  WARN 5434 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 17:01:18.290  INFO 5434 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 17:01:19.809  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 17:01:19.955  INFO 5434 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 17:01:19.956  INFO 5434 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 17:01:20.195  INFO 5434 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 17:01:20.195  INFO 5434 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 17:01:20.493  INFO 5434 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 17:01:20.506  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 17:01:20.698  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 17:01:20.726  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 17:01:20.728  INFO 5434 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 17:01:20.731  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534419080730 with initial instances count: 2
+2018-08-16 17:01:20.734  INFO 5434 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534419080734, current=UP, previous=STARTING]
+2018-08-16 17:01:20.735  INFO 5434 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 17:01:20.751  INFO 5434 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 17:01:20.784  INFO 5434 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 17:01:20.793  INFO 5434 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 17:01:20.803  INFO 5434 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 17:01:20.964  INFO 5434 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 17:01:21.044  INFO 5434 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 18.874 seconds (JVM running for 23.207)
+2018-08-16 17:01:45.722  WARN 5434 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534419105722, current=DOWN, previous=UP]
+2018-08-16 17:01:45.723  INFO 5434 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 17:01:45.729  INFO 5434 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 17:01:46.753  INFO 5434 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-08-16 17:01:46.813  INFO 5434 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-16 17:01:50.412  INFO 5577 --- [main] c.b.n.TodoappnoteserviceApplication      : No active profile set, falling back to default profiles: default
+2018-08-16 17:01:52.037  INFO 5577 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-16 17:01:52.037  INFO 5577 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-16 17:01:52.042  INFO 5577 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-08-16 17:01:52.116  INFO 5577 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-16 17:01:52.237  WARN 5577 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 17:01:52.237  INFO 5577 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 17:01:52.243  INFO 5577 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@171fb59a
+2018-08-16 17:01:52.602  INFO 5577 --- [localhost-startStop-1] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-08-16 17:01:52.652  INFO 5577 --- [cluster-ClusterId{value='5b7560a8c8417715c9ec891e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:18}] to localhost:27017
+2018-08-16 17:01:52.654  INFO 5577 --- [cluster-ClusterId{value='5b7560a8c8417715c9ec891e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[2, 6, 10]}, minWireVersion=0, maxWireVersion=2, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=881341}
+2018-08-16 17:01:52.918  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2018-08-16 17:01:52.919  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2018-08-16 17:01:52.919  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2018-08-16 17:01:52.919  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2018-08-16 17:01:52.919  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2018-08-16 17:01:52.919  INFO 5577 --- [localhost-startStop-1] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2018-08-16 17:01:56.755  INFO 5577 --- [main] c.b.n.repository.RedisRepository         : inside init of redisRepository 
+2018-08-16 17:01:57.257  WARN 5577 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-08-16 17:01:57.257  INFO 5577 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-16 17:01:58.188  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-08-16 17:01:58.236  INFO 5577 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-08-16 17:01:58.236  INFO 5577 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-08-16 17:01:58.313  INFO 5577 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-08-16 17:01:58.314  INFO 5577 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-08-16 17:01:58.439  INFO 5577 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-08-16 17:01:58.453  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-08-16 17:01:58.454  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-08-16 17:01:58.574  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-08-16 17:01:58.577  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-08-16 17:01:58.580  INFO 5577 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-08-16 17:01:58.583  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1534419118582 with initial instances count: 2
+2018-08-16 17:01:58.586  INFO 5577 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1534419118586, current=UP, previous=STARTING]
+2018-08-16 17:01:58.587  INFO 5577 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092: registering service...
+2018-08-16 17:01:58.603  INFO 5577 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-08-16 17:01:58.620  INFO 5577 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_NOTESERVICE/localhost:noteservice:8092 - registration status: 204
+2018-08-16 17:01:58.622  INFO 5577 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-08-16 17:01:58.633  INFO 5577 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-08-16 17:01:58.818  INFO 5577 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-08-16 17:01:58.850  INFO 5577 --- [main] c.b.n.TodoappnoteserviceApplication      : Started TodoappnoteserviceApplication in 11.084 seconds (JVM running for 11.441)
+2018-08-16 17:03:22.613  INFO 5577 --- [http-nio-8092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-16 17:06:58.456  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:11:58.457  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:16:58.458  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:21:58.459  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:26:58.460  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:31:58.461  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:36:58.463  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:41:58.482  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:46:58.483  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:51:58.484  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 17:56:58.485  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:01:58.486  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:06:58.511  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:11:58.513  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:16:58.531  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:21:58.532  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:26:58.533  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-08-16 18:31:58.534  INFO 5577 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

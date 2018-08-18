@@ -26,7 +26,7 @@ public interface INoteService {
 	 * @param note
 	 * @param req
 	 * @throws ToDoException
-	 * @throws IOException 
+	 * @throws IOException
 	 */
 	public void createNote(NoteDTO note, String userId) throws ToDoException, IOException;
 
@@ -209,5 +209,25 @@ public interface INoteService {
 	 * @throws IOException
 	 */
 	public List<Description> noteLink(List<String> list) throws IOException;
+
+	/****************************************************************************************************************************
+	 * @param userId
+	 *            <p>
+	 *            Function is to sort by Name.
+	 *            </p>
+	 * @return list
+	 * @throws ToDoException
+	 */
+	List<Note> sortByName(String userId) throws ToDoException;
+
+	/***************************************************************************************************************************
+	 * @param userId
+	 *            <p>
+	 *            Function is to sort by Date.
+	 *            </p>
+	 * @return list
+	 * @throws ToDoException
+	 */
+	List<Note> sortByDate(String userId) throws ToDoException;
 
 }

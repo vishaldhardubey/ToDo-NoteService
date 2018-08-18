@@ -70,5 +70,6 @@ public interface ILabelElasticRepository extends ElasticsearchRepository<Label, 
 	 *            </p>
 	 * @return
 	 */
-	public boolean existsByUserIdAndLabelName(String labelName, String userId);
+	//public boolean existsByUserIdAndLabelName(String labelName, String userId);
+	Optional<Label> findByUserIdAndLabelName(String labelName, String userId);
 }

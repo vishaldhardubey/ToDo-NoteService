@@ -71,6 +71,7 @@ public class NoteController {
 	 * @throws ToDoException
 	 * @throws IOException
 	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@ApiOperation(value = "asdfgh" )
 	@RequestMapping(method = RequestMethod.POST, value = "/createnote")
 	
@@ -475,4 +476,17 @@ public class NoteController {
 		System.out.println("Inside feign client note service");
 		return iUserFeign.getAllUser();
 	}*/
+	@RequestMapping(method = RequestMethod.POST, value = "/sortbyname")
+	public ResponseEntity<List<Note>> sortByName(HttpServletRequest req) throws ToDoException {
+		RestPreconditions.checkNotNull(req.getHeader("userId"), messageAccessor.getMessage("319"));
+		iNoteService.sortByName(req.getHeader("userId"));
+		return null;
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, value = "/sortbydate")
+	public ResponseEntity<List<Note>> sortByDate(HttpServletRequest req) throws ToDoException {
+		RestPreconditions.checkNotNull(req.getHeader("userId"), messageAccessor.getMessage("319"));
+		iNoteService.sortByDate(req.getHeader("userId"));
+		return null;
+	}
 }

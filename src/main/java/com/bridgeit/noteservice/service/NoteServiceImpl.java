@@ -74,18 +74,18 @@ public class NoteServiceImpl implements INoteService {
 	 * @param notedto
 	 * @param userId
 	 * @throws ToDoException
-	 * @throws IOException 
+	 * @throws IOException
 	 */
 	@Override
 	public void createNote(NoteDTO noteDto, String userId) throws ToDoException, IOException {
 		logger.info("Inside Create Note method");
-		
+
 		RestPreconditions.checkNotNull(noteDto, "NullPointerException : noteDto must contain some value");
-		
+
 		Note note = modelMapperService.map(noteDto, Note.class);
-		//calling noteLink method
-		List<Description> contentscrappinglist=noteLink(noteDto.getContentScrapingURL());
-		
+		// calling noteLink method
+		List<Description> contentscrappinglist = noteLink(noteDto.getContentScrapingURL());
+
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		note.setUserId(userId);
 		note.setCreatedDate(timeStamp);
@@ -93,7 +93,7 @@ public class NoteServiceImpl implements INoteService {
 		note.setContentDescription(contentscrappinglist);
 		List<Label> labelExists = new ArrayList<Label>();
 		List<Label> list = new ArrayList<Label>();
-		
+
 		for (int i = 0; i < noteDto.getLabelNameList().size(); i++) {
 			Label labelName = iLabelElasticRepository.findByLabelNameAndUserId(noteDto.getLabelNameList().get(i),
 					userId);
@@ -153,9 +153,9 @@ public class NoteServiceImpl implements INoteService {
 		List<Note> list = iNoteElasticSearchRepository.findAllByUserId(userId);
 		RestPreconditions.checkNotNull(list, "NoValueException : No Any Note is present for the given User Id");
 		List<Note> noteList = new ArrayList<Note>();
-		//stream api
-		noteList=list.stream().filter(streamList->streamList.isTrashStatus()==false).collect(Collectors.toList());
-		
+		// stream api
+		noteList = list.stream().filter(streamList -> streamList.isTrashStatus() == false).collect(Collectors.toList());
+
 		RestPreconditions.checkNotNull(noteList, "No any List is present for given user ID");
 		System.out.println(noteList);
 		logger.info("Ended after getting all Note");
@@ -339,15 +339,22 @@ public class NoteServiceImpl implements INoteService {
 
 		RestPreconditions.isPresentInDB(!iNoteElasticSearchRepository.existsById(noteId),
 				"NoValuePresentException : Note is not present for the given note Id");
+		logger.info(noteId + " : note is present in database");
 		Optional<Note> optionalNote = iNoteElasticSearchRepository.findById(noteId);
+
 		List<Label> list = optionalNote.get().getLabel();
-		if (iLabelElasticRepository.existsByUserIdAndLabelName(userId, labelName)) {
-			//stream api
-			List<Label>labelList=list.stream().filter(filterList->filterList.equals(labelName)==true).collect(Collectors.toList());
-			
-			if(labelList!=null) {
+		
+		Optional<Label> optionalLabel = iLabelElasticRepository.findByUserIdAndLabelName(labelName, userId);
+		
+		//if (iLabelElasticRepository.existsByUserIdAndLabelName(userId, labelName)) {
+		if(optionalLabel.isPresent()){
+			// stream api
+			List<Label> labelList = list.stream().filter(filterList -> filterList.equals(labelName) == true)
+					.collect(Collectors.toList());
+
+			if (labelList != null) {
 				throw new ToDoException("Label Name Already Exist");
-			}		
+			}
 			Label label = new Label();
 			label.setLabelName(labelName);
 			list.add(label);
@@ -453,11 +460,10 @@ public class NoteServiceImpl implements INoteService {
 	 *            </p>
 	 * @throws ToDoException
 	 */
-	@SuppressWarnings("unlikely-arg-type")
 	@Override
 	public void deleteLabel(String noteId, String userId, String labelName) throws ToDoException {
-		RestPreconditions.checkNotNull(iNoteElasticSearchRepository.existsById(userId),
-				"NullPointerException : userId Doesn't Exists in our database");
+		//RestPreconditions.checkNotNull(iNoteElasticSearchRepository.existsById(userId),
+		//		"NullPointerException : userId Doesn't Exists in our database");
 		RestPreconditions.checkNotNull(iNoteElasticSearchRepository.existsById(noteId),
 				"NullPointerException : noteId Doesn't Exists in our database");
 		List<Note> listNote = iNoteElasticSearchRepository.findAllByUserId(userId);
@@ -465,9 +471,10 @@ public class NoteServiceImpl implements INoteService {
 			Note note = listNote.get(i);
 			List<Label> list = note.getLabel();
 			for (int j = 0; j < list.size(); j++) {
-				if (labelName.equals(list.get(j))) {
-					list.get(j).setLabelName(null);
-					list.get(j).setLabelId(null);
+				if (labelName.equals(list.get(j).getLabelName())) {
+					list.remove(j);
+					//list.get(j).setLabelName(null);
+					//list.get(j).setLabelId(null);
 				}
 			}
 			note.setLabel(list);
@@ -476,6 +483,7 @@ public class NoteServiceImpl implements INoteService {
 		}
 
 		Label label = iLabelElasticRepository.findByLabelNameAndUserId(labelName, userId);
+		System.out.println(label.toString());
 		iNoteLabelRepository.delete(label);
 		iLabelElasticRepository.delete(label);
 	}
@@ -498,8 +506,9 @@ public class NoteServiceImpl implements INoteService {
 			throw new ToDoException("No Label is present");
 		}
 		List<Label> list = noteObject.get().getLabel();
-		//List<Label> finalList=list.stream().filter(str->labelName.equals(str.getLabelName())==true).collect(Collectors.toList());
-		//finalList.stream().filter(filterList->finalList.setLabelName(null)).collect(Collectors.toList());
+		// List<Label>
+		// finalList=list.stream().filter(str->labelName.equals(str.getLabelName())==true).collect(Collectors.toList());
+		// finalList.stream().filter(filterList->finalList.setLabelName(null)).collect(Collectors.toList());
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i).equals(labelName)) {
 				list.get(i).setLabelName(null);
@@ -530,11 +539,11 @@ public class NoteServiceImpl implements INoteService {
 
 	@Override
 	public List<Description> noteLink(List<String> list) throws IOException {
-		List<Description> lists=new ArrayList<>();
-		if(list==null) {
+		List<Description> lists = new ArrayList<>();
+		if (list == null) {
 			return null;
 		}
-		Description description=new Description();
+		Description description = new Description();
 		for (int i = 0; i < list.size(); i++) {
 			Document doc = Jsoup.connect(list.get(0).toString()).get();
 			@SuppressWarnings("unused")
@@ -547,5 +556,40 @@ public class NoteServiceImpl implements INoteService {
 			lists.add(description);
 		}
 		return lists;
+	}
+	
+	/****************************************************************************************************************************
+	 * @param userId
+	 *            <p>
+	 *            Function is to sort by Name.
+	 *            </p>
+	 * @return list
+	 * @throws ToDoException
+	 */
+	@Override
+	public List<Note> sortByName(String userId) throws ToDoException {
+
+		List<Note> allNote = RestPreconditions.checkNotNull(iNoteElasticSearchRepository.findAllByUserId(userId),
+				"NullPointerException : Note is not available for given user Id");
+		List<Note> sortedNote = allNote.stream().sorted((x, y) -> x.getTitle().compareTo(y.getTitle()))
+				.collect(Collectors.toList());
+		return sortedNote;
+
+	}
+	
+	/***************************************************************************************************************************
+	 * @param userId
+	 *            <p>
+	 *            Function is to sort by Date.
+	 *            </p>
+	 * @return list
+	 * @throws ToDoException
+	 */
+	@Override
+	public List<Note> sortByDate(String userId) throws ToDoException {
+		List<Note> allNote = RestPreconditions.checkNotNull(iNoteElasticSearchRepository.findAllByUserId(userId), "NullPointerException : Note is not available for given user Id");
+		List<Note> sortedNote = allNote.stream().sorted((x, y) -> x.getCreatedDate().compareTo(y.getCreatedDate()))
+				.collect(Collectors.toList());
+		return sortedNote;
 	}
 }
